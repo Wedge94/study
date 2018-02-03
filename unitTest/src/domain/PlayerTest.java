@@ -9,12 +9,12 @@ import org.junit.jupiter.api.RepeatedTest;
 
 public class PlayerTest {
 	
-	player player1;
-	static player player2;
+	Player player1;
+	static Player player2;
 	
 	@Before
 	public void testInit() {
-		player1 = new player("Tomek");
+		player1 = new Player("Tomek");
 	}
 	
 	@Test
@@ -34,7 +34,7 @@ public class PlayerTest {
 	
 	@BeforeAll
 	public static void testBefore() {
-		player2 = new player("Romek");
+		player2 = new Player("Romek");
 	}
 	
 	@RepeatedTest(100)

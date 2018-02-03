@@ -1,11 +1,11 @@
 package domain;
 
 public class Game {
-	player player1;
-	player player2;
-	public player playerWhoPlay;
-	public player playerWhoRest;
-	Game(player player1, player player2){
+	Player player1;
+	Player player2;
+	public Player playerWhoPlay;
+	public Player playerWhoRest;
+	Game(Player player1, Player player2){
 		this.player1 = player1;
 		this.player2 = player2;
 		playerWhoPlay = this.player1;
@@ -19,7 +19,7 @@ public class Game {
 		System.out.println(playerWhoPlay.getName() + " won");
 	}
 	public void changePlayer() {
-		player tempPlayer = playerWhoPlay;
+		Player tempPlayer = playerWhoPlay;
 		playerWhoPlay = playerWhoRest;
 		playerWhoRest = tempPlayer;
 	}
